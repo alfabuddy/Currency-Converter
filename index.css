@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f4e4ba 0%, #d1c4f0 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    margin: 2rem 0 1rem;
+}
+
+form, select, button, input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+}
+
+form input {
+    border: 1px solid #8a7e7e;
+    height: 3rem;
+    padding-left: 0.75rem;
+    transition: border-color 0.3s;
+}
+
+form input:focus {
+    border-color: rgb(69, 156, 111);
+    box-shadow: 0 0 5px rgba(69, 156, 111, 0.5);
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dropdown i {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    transition: color 0.3s;
+}
+
+.dropdown i:hover {
+    color: rgb(69, 156, 111);
+}
+
+.select-container img {
+    max-width: 2rem;
+}
+
+.select-container {
+    display: flex;
+    width: 6rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.select-container:hover {
+    background-color: rgba(69, 156, 111, 0.1);
+}
+
+.select-container select {
+    font-size: 1rem;
+    width: auto;
+    border: none;
+    background: transparent;
+}
+
+.msg {
+    margin: 2rem 0;
+    color: #333;
+}
+
+form button {
+    height: 3rem;
+    background-color: rgb(69, 156, 111);
+    color: #ffffff;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(50, 130, 84);
+    transform: translateY(-2px);
+}
+
+form button:active {
+    transform: translateY(0);
+}
